@@ -20,7 +20,7 @@ public class TestAutowireCandidate {
     @SpringBootConfiguration
     static class TestConfig {
 
-        @Bean//(autowireCandidate = false)
+        @Bean(autowireCandidate = false)
         Executor executor() {
             return new ThreadPoolTaskExecutorBuilder()
                     .corePoolSize(1)
